@@ -8,7 +8,7 @@ job {
     scm {
         git {
             remote {
-                url('git@github.com:ryanwalker/jenkins-grails-testing.git')
+                url('https://github.com/ryanwalker/jenkins-grails-testing.git')
             }
             branch('master')
             createTag(false)
