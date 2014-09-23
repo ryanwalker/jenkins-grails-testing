@@ -16,5 +16,7 @@ class HelloControllerSpec extends Specification {
     }
 
     void "test something"() {
+        expect:
+        assertTrue(true)
     }
 }
