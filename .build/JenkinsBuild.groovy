@@ -41,7 +41,7 @@ job {
     }
 
     triggers {
-        scm('*/5 * * * *')
+        scm('H/5 * * * *')
     }
 
     steps {
