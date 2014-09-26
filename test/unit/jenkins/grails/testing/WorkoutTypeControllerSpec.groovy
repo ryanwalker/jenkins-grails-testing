@@ -16,5 +16,7 @@ class WorkoutTypeControllerSpec extends Specification {
     }
 
     void "test something"() {
+        expect:
+        assert false
     }
 }

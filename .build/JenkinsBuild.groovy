@@ -31,7 +31,7 @@ job {
         }
     }
 
-    chucknorris()
+//    chucknorris() trying to figure out how to set this chuck norris plugin
 
 
 }
