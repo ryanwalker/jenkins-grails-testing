@@ -23,7 +23,7 @@ RUN update-alternatives --install /usr/bin/java java /usr/lib/jvm/java-7-oracle/
     update-alternatives --set java /usr/lib/jvm/java-7-oracle/jre/bin/java
 
 # Install tomcat
-RUN wget -O /tmp/tomcat7.tar.gz http://mirror.cogentco.com/pub/apache/tomcat/tomcat-7/v7.0.55/bin/apache-tomcat-7.0.55.tar.gz && \
+RUN wget -O /tmp/tomcat7.tar.gz http://mirror.symnds.com/software/Apache/tomcat/tomcat-7/v7.0.56/bin/apache-tomcat-7.0.56.tar.gz && \
     cd /opt && \
     tar zxf /tmp/tomcat7.tar.gz && \
     rm /tmp/tomcat7.tar.gz && \
