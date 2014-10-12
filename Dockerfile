@@ -30,6 +30,7 @@ RUN wget -O /tmp/tomcat7.tar.gz http://mirror.cogentco.com/pub/apache/tomcat/tom
     mv /opt/apache-tomcat* /opt/tomcat && \
     rm -rf /opt/tomcat/webapps/docs /opt/tomcat/webapps/examples /opt/tomcat/webapps/ROOT
 
-ADD /opt/jenkins/data/jobs/ryans-grails-test-job/workspace//target/docker-grails.war /opt/tomcat/webapps/ROOT.war
+# ADD /opt/jenkins/data/jobs/ryans-grails-test-job/workspace//target/docker-grails.war /opt/tomcat/webapps/ROOT.war
+ADD target/ROOT.war /opt/tomcat/webapps/ROOT.war
 
 CMD ["/opt/tomcat/bin/catalina.sh", "run"]

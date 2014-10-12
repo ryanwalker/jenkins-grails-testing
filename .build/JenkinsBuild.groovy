@@ -1,5 +1,5 @@
 job {
-    name('ryans-grails-test-job')
+    name('grails-project')
     displayName('Ryans Grails Test Job')
 
     scm {
@@ -14,10 +14,6 @@ job {
         }
     }
 
-//    triggers {
-//        scm('*/5 * * * *')
-//    }
-
     steps {
         grails {
             target("test-app")
@@ -30,9 +26,6 @@ job {
 //            archiveArtifacts 'target/**/*.war'
         }
     }
-
-//    chucknorris() trying to figure out how to set this chuck norris plugin
-
 
 }
 
@@ -52,6 +45,10 @@ job {
 //        }
 //    }
 //
+//  triggers {
+//        scm('*/5 * * * *')
+//    }
+
 //    steps {
 //        grails {
 //            target("war")
