@@ -4,7 +4,7 @@ class HelloController {
 
     def index() {
 
-        render 'hi wurld'
+        render 'Hello CD World!'
 
     }
 }
